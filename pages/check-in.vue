@@ -6,26 +6,24 @@
       <h1 class="title is-1 has-text-centered has-text-white" >Check-in</h1>
     </section>
     
-
   <section class= "section">
         <h1 class= "subtitle is-5" >Preencha abaixo as informações da sua reserva:</h1>
-    <section class= "section">
+    <section class="box p-6" style = "background-color: #c3c3c3">
     
-        <b-field label="Insira o número da sua reserva">
-            <b-input></b-input>
-        </b-field>
+        
 
-        <b-field label="Insira seu CPF ou RG">
-            <b-input></b-input>
+        <b-field label="CPF ou RG">
+            <b-input v-model="name" placeholder = "Insira seu CPF ou RG"></b-input>
         </b-field>
-  <div class="columns is-vcentered is-centered has-text-centered mt-6">
+      
+    </section>
+    
+   <div class="columns is-vcentered is-centered has-text-centered mt-6">
     <div class="column is-5">
-      <b-button tag="router-link" expanded :to="{ path: '/Hospedes' }" type="is-primary">Próximo</b-button>
+      <b-button outlined rounded tag="router-link" expanded :to="{ path: '/hospedes' }" type="is-primary">Próximo</b-button>
 
     </div>
   </div>
-      
-    </section>
 
     
   </section>

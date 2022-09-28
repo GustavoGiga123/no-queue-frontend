@@ -1,40 +1,25 @@
 <template>
+  
   <div class="container is-fluid">
-
-    <b-navbar shadow="true">
-        <template #brand>
-            <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/6/63/Ibis_Logo_2011.png"
-                    alt="Lightweight UI components for Vue.js based on Bulma"
-                >
-            </b-navbar-item>
-        </template>
-        <template #start>
-            <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                Check-In
-            </b-navbar-item>
-            <b-navbar-item tag="router-link" :to="{ path: '/Hospedes' }">
-                Hóspedes
-            </b-navbar-item>
-          <b-navbar-item tag="router-link" :to="{ path: '/dados' }">
-                Dados cadastrais
-            </b-navbar-item>
-        </template>
-
-        <template #end>
-            <b-navbar-item tag="div">
-                <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Voltar para reserva</strong>
-                    </a>
-                    <a class="button is-light">
-                        
-                    </a>
-                </div>
-            </b-navbar-item>
-        </template>
-    </b-navbar>
+<nav class="level pt-3">
+  <p class="level-item has-text-centered">
+    <a class="link is-info"></a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info"></a>
+  </p>
+  <p class="level-item has-text-centered">
+    <b-image style="width: 200px" class="image" :src="require('@/assets/logonoqueue.png')"></b-image>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info"></a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info"></a>
+  </p>
+</nav>
+    
+  
 
     <Nuxt/>
 

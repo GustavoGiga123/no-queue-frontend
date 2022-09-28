@@ -7,9 +7,9 @@
     </section>
     
 
-  <section class= "section">
+  <section class= "section ">
       
-    <section class= "section">
+    <section class= "section box p-6" style = "background-color: #c3c3c3">
     
         <b-field label="Quantos hóspedes estão na sua reserva?">
             <b-select placeholder="Selecione o número de hóspedes" expanded>
@@ -36,12 +36,16 @@
 
   <div class="columns is-vcentered is-centered has-text-centered mt-6">
     <div class="column is-5">
-      <b-button tag="router-link" expanded :to="{ path: '/dados' }" type="is-primary">Próximo</b-button>
+      <b-button outlined rounded tag="router-link" expanded :to="{ path: '/dados-cadastrais' }" type="is-primary">Próximo</b-button>
 
     </div>
   </div>
     
-
+    <section class="columns is-vcentered is-centered has-text-centered mt-3">
+    <div class="column is-2">
+      <b-button size="is-small" tag="router-link" expanded :to="{ path: '/check-in' }" type="is-primary" outlined rounded >Voltar</b-button>
+    </div>
+    </section>
        
   </section>    
   </section>

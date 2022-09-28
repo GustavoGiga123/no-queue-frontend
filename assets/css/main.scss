@@ -2,7 +2,7 @@
 @import "~bulma/sass/utilities/_all";
 
 // Set your colors
-$primary: #efc76b;
+$primary: #000000;
 $primary-light: findLightColor($primary);
 $primary-dark: findDarkColor($primary);
 $primary-invert: findColorInvert($primary);
@@ -11,7 +11,7 @@ $twitter-invert: findColorInvert($twitter);
 
 $container-offset: 0px;
 
-$gap: 10;
+$gap: 0;
 
 //$container-max-width: $isfluid;
 
